@@ -68,6 +68,8 @@ print("Investment - to calculate the amount of interest you'll earn on your inve
 
 print("Bond - to calculate the amount you'll have to pay on a home loan. \n")                         # Define what service they require
 
+print("Enter 'e' to exit\n")
+
 print("-"*100)
 
 user_choice = input("Please enter either 'investment' or 'bond' from the menu above to proceed:")     # User input required
@@ -117,6 +119,9 @@ elif user_choice.lower() == "bond":
 
     b_roundup = round(bond_repay_form, 2)                                                                       # Rounding function used on the total variable
 
-    print(f"Your monthly repayment amount is £{b_roundup}!")                                                    # Final bond print statment for the total 
+    print(f"Your monthly repayment amount is £{b_roundup}!")                                                   # Final bond print statment for the total 
+
+elif user_choice.lower() == "e" and "exit":                                                                    # If the user enters e or exit they will leave
+    print("You have chosen to leave, Goodbye!")
 
 else: print("Unfortunately no given choice was entered, Good bye!")
