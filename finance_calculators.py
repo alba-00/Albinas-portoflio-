@@ -68,7 +68,7 @@ print("Investment - to calculate the amount of interest you'll earn on your inve
 
 print("Bond - to calculate the amount you'll have to pay on a home loan. \n")                         # Define what service they require
 
-print("Enter 'e' to exit\n")
+print("'e' - to exit")
 
 print("-"*100)
 
