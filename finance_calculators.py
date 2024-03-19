@@ -3,20 +3,58 @@ Pseudo Code for finance_calculator.py:
 
 Import maths module 
 
-START
-Display options for 'investment', 'bond', or 'exit'.
-Accept user choice.
-If choice is 'investment':
-   Prompt for deposit amount, interest rate, and investment duration.
-   Calculate and display either simple or compound interest based on user input.
-If choice is 'bond':
-   Prompt for house value, monthly interest rate, and repayment duration.
-   Calculate and display monthly repayment amount for the bond.
-If choice is 'exit':
-   Display a goodbye message and end the program.
-If choice is invalid:
-   Display an error message and prompt again.
+Create variables: 
+
+1.) Users_choice 
+
+
+2.) Option 1: Investment
+
+Steps of input: 
+
+1. amount of money to be deposited 
+input question to user - (float)
+
+2. interest rate (%) - [exclusively numbers] 
+input question to user - (float)
+
+3. years for said planned investment 
+input question to user - (float)
+
+4. choice between simple/compound interest [.lower()]  
+input choice between simple and compound interest to the user
+
+2.b)
+Choice between: simple interest or compound interest
+
+1. create formula for simple interest
+2. create formula for compound interest
+
+output answer
+
 END
+
+3.) Option 2: Bond 
+
+Steps of input: 
+
+1. present value of their hous e.g. 100000 [exclusively numbers] 
+input question to user - (float)
+
+2. interest rate e.g. 7 [exclusively numbers]
+input question to user - (float)
+
+3. number of months they plan to take to repay the bond e.g. 120 [exclusively numbers]
+input question to user - (float)
+
+3.c) create formula for bond_repayment
+
+4. output answer - calc total money user will have to repay each month 
+
+END
+
+If the user doesnt enter any valid input:
+else - print(appropriate error message) 
 
  '''
 
