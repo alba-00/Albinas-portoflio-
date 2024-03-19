@@ -2,6 +2,7 @@
 Pseudo Code for finance_calculator.py:
 
 Import maths module 
+
 START
 Display options for 'investment', 'bond', or 'exit'.
 Accept user choice.
