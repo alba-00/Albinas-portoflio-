@@ -6,12 +6,15 @@ Import maths module
 START
 Display options for 'investment', 'bond', or 'exit'.
 Accept user choice.
+class(investment)
 If choice is 'investment':
    Prompt for deposit amount, interest rate, and investment duration.
    Calculate and display either simple or compound interest based on user input.
+class(bond)
 If choice is 'bond':
    Prompt for house value, monthly interest rate, and repayment duration.
    Calculate and display monthly repayment amount for the bond.
+class(menu)
 If choice is 'exit':
    Display a goodbye message and end the program.
 If choice is invalid:
@@ -63,6 +66,7 @@ def main():
         calculate_investment()
     elif user_choice.lower() == 'bond':
         calculate_bond()
+    # Exiting the Menu
     elif user_choice.lower() == 'e' or user_choice.lower() == 'exit':
         print("You have chosen to leave, Goodbye!")
     else:
